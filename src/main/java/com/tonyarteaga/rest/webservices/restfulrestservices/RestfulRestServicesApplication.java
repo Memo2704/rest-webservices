@@ -1,11 +1,12 @@
 package com.tonyarteaga.rest.webservices.restfulrestservices;
 
+import com.tonyarteaga.rest.webservices.restfulrestservices.helloworld.HelloWorldController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses = HelloWorldController.class)
+@ComponentScan(basePackageClasses = com.tonyarteaga.rest.webservices.restfulrestservices.user.UserResource.class)
 public class RestfulRestServicesApplication {
 
 	public static void main(String[] args) {
