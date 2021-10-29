@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses = com.tonyarteaga.rest.webservices.restfulrestservices.user.UserResource.class)
+@ComponentScan({"com.tonyarteaga.rest.webservices.restfulrestservices.user.UserResource.class",
+		"com.tonyarteaga.rest.webservices.restfulrestservices.exception.CustomizedResponseEntityExceptionHandler"})
 public class RestfulRestServicesApplication {
 
 	public static void main(String[] args) {
